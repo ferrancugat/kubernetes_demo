@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fm-insight-processor-pod
+  labels:
+    app: fm-insight-processor
+spec:
+  containers:
+  - name: fm-insight-processor-container
+    image: fm/fm-insight-processor-test:3.0.0-SNAPSHOT
